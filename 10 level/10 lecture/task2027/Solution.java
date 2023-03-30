@@ -207,8 +207,8 @@ public class Solution {
     
     }
     public static boolean canIgoNext(int[][] crossword, int y, int x){
-        if(y > crossword.length - 1) return false;
-        if(x > crossword[y].length - 1) return false;
+        if(y > crossword.length - 1 || y < 0) return false;
+        if(x > crossword[y].length - 1 || x < 0) return false;
         return true;
     }
 
